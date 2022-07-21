@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./feedback.png" type="image/x-icon">
+    <title>Feedback</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body id="body">
+    <h1>Feedback form</h1>
+    <div class="container">
+      <form action="" id="form">
+        <div class="fill">
+          <label for="from">Name</label>
+          <input type="text" id="from" name="from">
+        </div>
+        
+        <div class="fill">
+          <label for="review">Star</label>
+          <input type="number" id="review" min='1' max="5" name="review">
+        </div>
+
+        <div class="fill">
+          <label for="text">Feedback</label>
+          <input type="text" id="text" name="text">
+        </div>
+  
+        <input type="submit" id="submit">
+      </form>
+      
+      <div class="addLine">
+        <button class="up sortBtns">Sort &#8657;</button>
+        <button class="down sortBtns">Sort &#8659;</button>
+        <p class="average">Average number</p>
+      </div>
+      
+      <ul id="list"></ul>
+    </div>
+  </body>
+</html>
